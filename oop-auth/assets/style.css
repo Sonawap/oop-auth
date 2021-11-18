@@ -1,0 +1,14 @@
+.input{
+    padding: 10px;
+}
+.form-group{
+    margin-bottom: 10px;
+}
+button{
+    background-color: #aceb00;
+    padding: 20px 40px;
+    border: 2px solid #476700;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
