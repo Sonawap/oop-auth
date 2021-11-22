@@ -6,7 +6,6 @@ if(isset($_POST['login'])){
     $password = $_POST['password'];
 
     $login = $user->login($email, $password);
-    echo $login;
 }
 
 ?>

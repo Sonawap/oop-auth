@@ -9,7 +9,7 @@ if(isset($_POST['register'])){
     $register = $user->register($name, $email, $password);
 
     if($register){
-        echo "User Account Created";
+        $user->login($email, $password);
     }else{
         echo "Account was unable to be created, try again";
     }

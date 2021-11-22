@@ -1,6 +1,6 @@
 <?php
 session_start();
-class User{
+class User{    
     public static function register($name, $email, $password){
         require 'db.php';
         $newPassword = md5($password);
@@ -34,7 +34,14 @@ class User{
         }else{
             header("Location: login.php?error=Cannot login");
         }
+    }
 
+    public static function getUserDetails(){
+        require 'db.php';
+        $user_id = $_SESSION['user_id'];
+        $query = "SELECT * FROM users where id = '$user_id'";
+        $result = $sonawap->query($query) or die($sonawap->error.__LINE__);
+        return $rows = mysqli_fetch_array($result);
     }
 }
 
