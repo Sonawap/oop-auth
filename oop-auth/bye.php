@@ -4,10 +4,10 @@ require_once 'core/user.php';
 ?>
 <html>
     <head>
-        <title>Welcome to our website</title>
+        <title>Logged out</title>
     </head>
     <?php require_once 'includes/nav.php' ?>
     <body>
-        <h1>Welcome to your website</h1>
+        <h1>Sad to see you leave</h1>
     </body>
 </html>
